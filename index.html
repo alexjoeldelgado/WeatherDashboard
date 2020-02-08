@@ -19,28 +19,27 @@
                     <form>
                         <div class="form-group form-inline">
                             <label for="formGroupExampleInput"><h4>Search for a City:</h4></label>
-                            <input type="text" class="form-control form-inline" id="formGroupExampleInput" placeholder="City">
-                            <button type="button" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            <input type="text" class="form-control form-inline" id="cityInput" placeholder="City">
+                            <button type="button" class="btn btn-primary" id="searchButton"><i class="fas fa-search"></i></button>
                         </div>
                     </form>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Orlando</li>
-                    <li class="list-group-item">Orlando</li>
-                    <li class="list-group-item">Orlando</li>
-                    <li class="list-group-item">Orlando</li>
-                </ul>
+                <div class="list-group" id="cityList">
+                    
+                </div>
             </div>
         </div>
         <div class="col-9">
             <div class="row">
                 <div class="card w-100">
                     <div class="card-body">
-                        <h3 class="card-title">Orlando</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <h3 class="card-title" id="cityName"></h3>
+                        <h5 class="card-title" id="currentDay"></h5>
+                        <img id ="weatherIcon" src="" height="40px">
+                        <p class="card-text" id="temp"></p>
+                        <p class="card-text" id="humi"></p>
+                        <p class="card-text" id="wind"></p>
+                        <p class="card-text" id="uvin"></p>
                     </div>
                 </div>
             </div>
@@ -90,4 +89,10 @@
         </div>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="script.js">
+
+
+</script>
 </html>
