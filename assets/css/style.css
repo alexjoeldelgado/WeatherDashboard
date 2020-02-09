@@ -1,0 +1,14 @@
+body {
+    background-image: url('https://i1.wp.com/laceyandleeco.com/wp-content/uploads/2019/01/Toy-Story-2.jpg?fit=2048%2C1536&ssl=1');
+}
+.card, button {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: navy;
+}
+header {
+    color: white;
+    font-size: xx-large;
+    text-shadow: 2px 4px 4px black;
+}
