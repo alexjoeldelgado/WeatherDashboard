@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/3a5c5d0024.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar justify-content-center navbar-light bg-light">
+    <header class="navbar justify-content-center">
         <h1>Weather Dashboard</h1>
-    </nav>
+    </header>
     <div class="row">
         <div class="col-3">
             <div class="card">
@@ -29,13 +30,13 @@
                 </div>
             </div>
         </div>
-        <div class="col-9">
+        <div class="col-8">
             <div class="row">
                 <div class="card w-100">
                     <div class="card-body">
                         <h3 class="card-title" id="cityName"></h3>
                         <h5 class="card-title" id="currentDay"></h5>
-                        <img id ="weatherIcon" src="" height="40px">
+                        <img id ="weatherIcon" src="" height="50px">
                         <p class="card-text" id="temp"></p>
                         <p class="card-text" id="humi"></p>
                         <p class="card-text" id="wind"></p>
@@ -43,45 +44,13 @@
                     </div>
                 </div>
             </div>
+            <br>
             <div class="row">
                 <div class="card w-100">
                     <div class="card-body">
                         <h3 class="card-title">5 Day Forecast:</h3>
-                        <ul class="list-group list-group-horizontal-md">
-                            <span class="badge badge-primary">
-                                <p class="card-text"><h3>08/01/2015</h3></p>
-                                <p class="card-text">With supporting text</p>
-                                <p class="card-text">With supporting text</p>
-                                <p class="card-text">With supporting text</p>
-                            </span>
-                            <span>&nbsp;&nbsp;&nbsp;</span>
-                            <span class="badge badge-primary">
-                                <p class="card-text"><h3>02/05/2020</h3></p>
-                                <p class="card-text">With supporting text</p>
-                                <p class="card-text">With supporting text</p>
-                                <p class="card-text">With supporting text</p>
-                            </span>
-                            <span>&nbsp;&nbsp;&nbsp;</span>
-                            <span class="badge badge-primary">
-                                <p class="card-text"><h3>02/05/2020</h3></p>
-                                <p class="card-text">With supporting text</p>
-                                <p class="card-text">With supporting text</p>
-                                <p class="card-text">With supporting text</p>
-                            </span>
-                            <span>&nbsp;&nbsp;&nbsp;</span>
-                            <span class="badge badge-primary">
-                                <p class="card-text"><h3>02/05/2020</h3></p>
-                                <p class="card-text">With supporting text</p>
-                                <p class="card-text">With supporting text</p>
-                                <p class="card-text">With supporting text</p>
-                            </span>
-                            <span>&nbsp;&nbsp;&nbsp;</span>
-                            <span class="badge badge-primary">
-                                <p class="card-text"><h3>02/05/2020</h3></p>
-                                <p class="card-text">With supporting text</p>
-                                <p class="card-text">With supporting text</p>
-                                <p class="card-text">With supporting text</p>
-                            </span>
+                        <ul class="list-group list-group-horizontal-md" id="forecast">
+                            
                         </ul>
                     </div>
                 </div>
@@ -91,8 +60,5 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="script.js">
-
-
-</script>
+<script src="assets/js/script.js"></script>
 </html>
