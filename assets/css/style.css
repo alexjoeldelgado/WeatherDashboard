@@ -12,3 +12,9 @@ header {
     font-size: xx-large;
     text-shadow: 2px 4px 4px black;
 }
+.card-body{
+    overflow: auto;
+}
+.badge {
+    height: 10%;
+}
