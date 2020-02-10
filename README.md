@@ -10,8 +10,8 @@ All information is retrieved using the OpenWeatherMap API.
 https://openweathermap.org/
 
 ### Visuals
-<img src="assets/Images/ss1.PNG" width="200">
-<img src="assets/Images/ss2.PNG" width="200">
+<img src="assets/images/ss1.PNG" width="200">
+<img src="assets/images/ss2.PNG" width="200">
 
 
 #### Installation
