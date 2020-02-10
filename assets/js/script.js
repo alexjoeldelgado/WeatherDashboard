@@ -58,7 +58,7 @@ function populate5DayForecast(){
             forecastArray.push(forecastData);
             }};
             for (i=0;i<5;i++){
-            var newForecastBadge = $("<span class='badge badge-primary'><p class='card-text'><h3>"+ moment().add(i, 'days').format(" MM/DD/YYYY ") + "</h3></p><img  src='https://openweathermap.org/img/wn/" + forecastArray[i].weather[0].icon + "@2x.png'><p class='card-text'>Temp: " + forecastArray[i].main.temp + "F</p><p class='card-text'>Humidity: " + forecastArray[i].main.humidity + "%</p><br></span><span>&nbsp;&nbsp;&nbsp;</span>");
+            var newForecastBadge = $("<span class='badge badge-primary'><br><h4>"+ moment().add(i, 'days').format(" MM/DD/YYYY ") + "</h4><img height='50px' src='https://openweathermap.org/img/wn/" + forecastArray[i].weather[0].icon + "@2x.png'><p>Temp: " + forecastArray[i].main.temp + "F</p><p>Humidity: " + forecastArray[i].main.humidity + "%</p><br></span><span>&nbsp;&nbsp;&nbsp;</span>");
             $("#forecast").append(newForecastBadge);}
             forecastArray = [];
         })};
