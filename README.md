@@ -17,7 +17,7 @@ https://openweathermap.org/
 #### Installation
 No installation necessary. The program is ready to run.
 
-https://alexjoeldelgado.github.io/WorkDayPlanner/
+https://alexjoeldelgado.github.io/WeatherDashboard/
 
 ##### Licenses
 No licenses necessary. Feel free to use my code.
