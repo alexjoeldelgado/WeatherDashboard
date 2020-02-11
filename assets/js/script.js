@@ -35,6 +35,7 @@ function getCityInfo(){
           })
           })
 };
+
 function clearForecast(){
   $("#forecast").empty();
 }
@@ -74,6 +75,9 @@ $(document).on("click", ".citybutton", function() {
 $("#searchButton").on("click", function(e){
     event.preventDefault();
     city = $("#cityInput").val();
+    if (city !== ""){
+      if (cityArray.includes(city)){
+      return }
     queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=e2fb09f943d13edae5d62609baa96a83";
     getCityInfo();
     clearForecast();
@@ -81,7 +85,9 @@ $("#searchButton").on("click", function(e){
     storeCityInfo();
     populate5DayForecast();
     addCityButton();
-    });
+} else {
+  return
+}});
 
 
 
